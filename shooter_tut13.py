@@ -702,6 +702,8 @@ while run:
 		draw_text('GRENADES: ', font, WHITE, 10, 60)
 		for x in range(player.grenades):
 			screen.blit(grenade_img, (135 + (x * 15), 60))
+		
+		draw_text(f'LEVEL: {level}',font,WHITE, 10, 85)
 
 
 		player.update()
